@@ -35,7 +35,7 @@ Partial Class Form_Expense
         Label4 = New Label()
         Label3 = New Label()
         Label6 = New Label()
-        ListBox1 = New ListBox()
+        ComboBox1 = New ComboBox()
         SuspendLayout()
         ' 
         ' Btn_Wallet
@@ -165,16 +165,15 @@ Partial Class Form_Expense
         Label6.TabIndex = 23
         Label6.Text = "Category"
         ' 
-        ' ListBox1
+        ' ComboBox1
         ' 
-        ListBox1.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ListBox1.FormattingEnabled = True
-        ListBox1.ItemHeight = 29
-        ListBox1.Items.AddRange(New Object() {"--Select--", "Food", "Transportation", "Medicine"})
-        ListBox1.Location = New Point(610, 224)
-        ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(272, 352)
-        ListBox1.TabIndex = 24
+        ComboBox1.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ComboBox1.FormattingEnabled = True
+        ComboBox1.Items.AddRange(New Object() {"--Select--", "Food", "Transport"})
+        ComboBox1.Location = New Point(587, 224)
+        ComboBox1.Name = "ComboBox1"
+        ComboBox1.Size = New Size(287, 37)
+        ComboBox1.TabIndex = 24
         ' 
         ' Form_Expense
         ' 
@@ -182,7 +181,7 @@ Partial Class Form_Expense
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Window
         ClientSize = New Size(1168, 662)
-        Controls.Add(ListBox1)
+        Controls.Add(ComboBox1)
         Controls.Add(Label6)
         Controls.Add(Label3)
         Controls.Add(Button1)
@@ -215,5 +214,5 @@ Partial Class Form_Expense
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents ComboBox1 As ComboBox
 End Class
