@@ -4,4 +4,10 @@
         GoIncomeForm.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Btn_Expense_Click(sender As Object, e As EventArgs) Handles Btn_Expense.Click
+        Dim GoExpenseForm As New Form_Expense()
+        GoExpenseForm.Show()
+        Me.Hide()
+    End Sub
 End Class

@@ -27,6 +27,10 @@ Partial Class Main_Page
         Btn_Expense = New Button()
         Btn_Statistic = New Button()
         Btn_Wallet = New Button()
+        Label2 = New Label()
+        Label3 = New Label()
+        Label4 = New Label()
+        TextBox1 = New TextBox()
         SuspendLayout()
         ' 
         ' Label1
@@ -83,12 +87,52 @@ Partial Class Main_Page
         Btn_Wallet.Text = "WALLET"
         Btn_Wallet.UseVisualStyleBackColor = False
         ' 
+        ' Label2
+        ' 
+        Label2.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(33, 216)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(112, 31)
+        Label2.TabIndex = 5
+        Label2.Text = "Balance"
+        ' 
+        ' Label3
+        ' 
+        Label3.Font = New Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.Location = New Point(33, 258)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(38, 35)
+        Label3.TabIndex = 6
+        Label3.Text = "₱"
+        ' 
+        ' Label4
+        ' 
+        Label4.Font = New Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.Location = New Point(67, 258)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(215, 35)
+        Label4.TabIndex = 7
+        Label4.Text = "0.00"
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.BorderStyle = BorderStyle.FixedSingle
+        TextBox1.Location = New Point(33, 313)
+        TextBox1.Multiline = True
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(1102, 337)
+        TextBox1.TabIndex = 8
+        ' 
         ' Main_Page
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Window
         ClientSize = New Size(1168, 662)
+        Controls.Add(TextBox1)
+        Controls.Add(Label4)
+        Controls.Add(Label3)
+        Controls.Add(Label2)
         Controls.Add(Btn_Wallet)
         Controls.Add(Btn_Statistic)
         Controls.Add(Btn_Expense)
@@ -97,6 +141,7 @@ Partial Class Main_Page
         Name = "Main_Page"
         Text = "Main Page"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Label1 As Label
@@ -104,5 +149,9 @@ Partial Class Main_Page
     Friend WithEvents Btn_Expense As Button
     Friend WithEvents Btn_Statistic As Button
     Friend WithEvents Btn_Wallet As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents TextBox1 As TextBox
 
 End Class

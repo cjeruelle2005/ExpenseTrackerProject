@@ -27,6 +27,15 @@ Partial Class Form_Expense
         Btn_Expense = New Button()
         Btn_Income = New Button()
         Label1 = New Label()
+        Label2 = New Label()
+        Button1 = New Button()
+        TextBox2 = New TextBox()
+        Label5 = New Label()
+        TextBox1 = New TextBox()
+        Label4 = New Label()
+        Label3 = New Label()
+        Label6 = New Label()
+        ListBox1 = New ListBox()
         SuspendLayout()
         ' 
         ' Btn_Wallet
@@ -83,12 +92,105 @@ Partial Class Form_Expense
         Label1.TabIndex = 5
         Label1.Text = "Hello, User"
         ' 
+        ' Label2
+        ' 
+        Label2.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(33, 190)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(112, 31)
+        Label2.TabIndex = 11
+        Label2.Text = "Date"
+        ' 
+        ' Button1
+        ' 
+        Button1.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button1.Location = New Point(304, 220)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(133, 36)
+        Button1.TabIndex = 21
+        Button1.Text = "CHANGE"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox2.Location = New Point(33, 468)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(404, 41)
+        TextBox2.TabIndex = 20
+        TextBox2.Text = "0.00"
+        ' 
+        ' Label5
+        ' 
+        Label5.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label5.Location = New Point(33, 434)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(156, 31)
+        Label5.TabIndex = 19
+        Label5.Text = "Amount"
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox1.Location = New Point(33, 339)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(404, 41)
+        TextBox1.TabIndex = 18
+        TextBox1.Text = "Short Description"
+        ' 
+        ' Label4
+        ' 
+        Label4.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.Location = New Point(33, 221)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(228, 35)
+        Label4.TabIndex = 17
+        Label4.Text = "YYYY-MM-DD"
+        ' 
+        ' Label3
+        ' 
+        Label3.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label3.Location = New Point(33, 305)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(156, 31)
+        Label3.TabIndex = 22
+        Label3.Text = "Description"
+        ' 
+        ' Label6
+        ' 
+        Label6.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label6.Location = New Point(587, 190)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(156, 31)
+        Label6.TabIndex = 23
+        Label6.Text = "Category"
+        ' 
+        ' ListBox1
+        ' 
+        ListBox1.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ListBox1.FormattingEnabled = True
+        ListBox1.ItemHeight = 29
+        ListBox1.Items.AddRange(New Object() {"--Select--", "Food", "Transportation", "Medicine"})
+        ListBox1.Location = New Point(610, 224)
+        ListBox1.Name = "ListBox1"
+        ListBox1.Size = New Size(272, 352)
+        ListBox1.TabIndex = 24
+        ' 
         ' Form_Expense
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Window
         ClientSize = New Size(1168, 662)
+        Controls.Add(ListBox1)
+        Controls.Add(Label6)
+        Controls.Add(Label3)
+        Controls.Add(Button1)
+        Controls.Add(TextBox2)
+        Controls.Add(Label5)
+        Controls.Add(TextBox1)
+        Controls.Add(Label4)
+        Controls.Add(Label2)
         Controls.Add(Btn_Wallet)
         Controls.Add(Btn_Statistic)
         Controls.Add(Btn_Expense)
@@ -97,6 +199,7 @@ Partial Class Form_Expense
         Name = "Form_Expense"
         Text = "Form_Expense"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Btn_Wallet As Button
@@ -104,4 +207,13 @@ Partial Class Form_Expense
     Friend WithEvents Btn_Expense As Button
     Friend WithEvents Btn_Income As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents ListBox1 As ListBox
 End Class

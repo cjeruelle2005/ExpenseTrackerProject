@@ -27,6 +27,13 @@ Partial Class Form_Income2
         Btn_Expense2 = New Button()
         Btn_Income = New Button()
         Label1 = New Label()
+        Label2 = New Label()
+        Label4 = New Label()
+        Label3 = New Label()
+        TextBox1 = New TextBox()
+        Label5 = New Label()
+        TextBox2 = New TextBox()
+        Button1 = New Button()
         SuspendLayout()
         ' 
         ' Btn_Wallet2
@@ -83,12 +90,83 @@ Partial Class Form_Income2
         Label1.TabIndex = 5
         Label1.Text = "Hello, User"
         ' 
+        ' Label2
+        ' 
+        Label2.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(33, 190)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(112, 31)
+        Label2.TabIndex = 10
+        Label2.Text = "Date"
+        ' 
+        ' Label4
+        ' 
+        Label4.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.Location = New Point(33, 221)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(228, 35)
+        Label4.TabIndex = 11
+        Label4.Text = "YYYY-MM-DD"
+        ' 
+        ' Label3
+        ' 
+        Label3.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label3.Location = New Point(33, 305)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(156, 31)
+        Label3.TabIndex = 12
+        Label3.Text = "Description"
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox1.Location = New Point(33, 339)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(404, 41)
+        TextBox1.TabIndex = 13
+        TextBox1.Text = "Short Description"
+        ' 
+        ' Label5
+        ' 
+        Label5.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label5.Location = New Point(33, 434)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(156, 31)
+        Label5.TabIndex = 14
+        Label5.Text = "Amount"
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox2.Location = New Point(33, 468)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(404, 41)
+        TextBox2.TabIndex = 15
+        TextBox2.Text = "0.00"
+        ' 
+        ' Button1
+        ' 
+        Button1.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button1.Location = New Point(304, 220)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(133, 36)
+        Button1.TabIndex = 16
+        Button1.Text = "CHANGE"
+        Button1.UseVisualStyleBackColor = True
+        ' 
         ' Form_Income2
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Window
         ClientSize = New Size(1168, 662)
+        Controls.Add(Button1)
+        Controls.Add(TextBox2)
+        Controls.Add(Label5)
+        Controls.Add(TextBox1)
+        Controls.Add(Label3)
+        Controls.Add(Label4)
+        Controls.Add(Label2)
         Controls.Add(Btn_Wallet2)
         Controls.Add(Btn_Statistic2)
         Controls.Add(Btn_Expense2)
@@ -97,6 +175,7 @@ Partial Class Form_Income2
         Name = "Form_Income2"
         Text = "Form_Income"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Btn_Wallet2 As Button
@@ -104,4 +183,11 @@ Partial Class Form_Income2
     Friend WithEvents Btn_Expense2 As Button
     Friend WithEvents Btn_Income As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Button1 As Button
 End Class
