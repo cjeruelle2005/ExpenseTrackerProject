@@ -169,11 +169,12 @@ Partial Class Form_Income2
         ' 
         ComboBox1.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ComboBox1.FormattingEnabled = True
-        ComboBox1.Items.AddRange(New Object() {"--Select--", "Food", "Transport"})
+        ComboBox1.Items.AddRange(New Object() {"Allowance", "Award", "Bonus", "Dividend", "Investment", "Lottery", "Salary", "Tips", "Others"})
         ComboBox1.Location = New Point(587, 224)
         ComboBox1.Name = "ComboBox1"
         ComboBox1.Size = New Size(287, 37)
         ComboBox1.TabIndex = 25
+        ComboBox1.Text = "Select Category"
         ' 
         ' Form_Income2
         ' 

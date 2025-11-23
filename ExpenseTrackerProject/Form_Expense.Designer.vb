@@ -28,7 +28,6 @@ Partial Class Form_Expense
         Btn_Income = New Button()
         Label1 = New Label()
         Label2 = New Label()
-        Button1 = New Button()
         TextBox2 = New TextBox()
         Label5 = New Label()
         TextBox1 = New TextBox()
@@ -36,6 +35,7 @@ Partial Class Form_Expense
         Label3 = New Label()
         Label6 = New Label()
         ComboBox1 = New ComboBox()
+        DateTimePicker1 = New DateTimePicker()
         SuspendLayout()
         ' 
         ' Btn_Wallet
@@ -101,16 +101,6 @@ Partial Class Form_Expense
         Label2.TabIndex = 11
         Label2.Text = "Date"
         ' 
-        ' Button1
-        ' 
-        Button1.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(304, 220)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(133, 36)
-        Button1.TabIndex = 21
-        Button1.Text = "CHANGE"
-        Button1.UseVisualStyleBackColor = True
-        ' 
         ' TextBox2
         ' 
         TextBox2.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
@@ -169,11 +159,20 @@ Partial Class Form_Expense
         ' 
         ComboBox1.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ComboBox1.FormattingEnabled = True
-        ComboBox1.Items.AddRange(New Object() {"--Select--", "Food", "Transport"})
+        ComboBox1.Items.AddRange(New Object() {"Bills", "Clothing", "Education", "Entertainment", "Fitness", "Food", "Gifts", "Health", "Furniture", "Pet", "Shopping", "Transportation", "Travel", "Others"})
         ComboBox1.Location = New Point(587, 224)
         ComboBox1.Name = "ComboBox1"
         ComboBox1.Size = New Size(287, 37)
         ComboBox1.TabIndex = 24
+        ComboBox1.Text = "Select Category"
+        ' 
+        ' DateTimePicker1
+        ' 
+        DateTimePicker1.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DateTimePicker1.Location = New Point(33, 259)
+        DateTimePicker1.Name = "DateTimePicker1"
+        DateTimePicker1.Size = New Size(474, 41)
+        DateTimePicker1.TabIndex = 25
         ' 
         ' Form_Expense
         ' 
@@ -181,10 +180,10 @@ Partial Class Form_Expense
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Window
         ClientSize = New Size(1168, 662)
+        Controls.Add(DateTimePicker1)
         Controls.Add(ComboBox1)
         Controls.Add(Label6)
         Controls.Add(Label3)
-        Controls.Add(Button1)
         Controls.Add(TextBox2)
         Controls.Add(Label5)
         Controls.Add(TextBox1)
@@ -207,7 +206,6 @@ Partial Class Form_Expense
     Friend WithEvents Btn_Income As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents TextBox1 As TextBox
@@ -215,4 +213,5 @@ Partial Class Form_Expense
     Friend WithEvents Label3 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class
