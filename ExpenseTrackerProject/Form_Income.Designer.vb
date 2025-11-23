@@ -34,6 +34,8 @@ Partial Class Form_Income2
         Label5 = New Label()
         TextBox2 = New TextBox()
         Button1 = New Button()
+        Label6 = New Label()
+        ComboBox1 = New ComboBox()
         SuspendLayout()
         ' 
         ' Btn_Wallet2
@@ -154,12 +156,33 @@ Partial Class Form_Income2
         Button1.Text = "CHANGE"
         Button1.UseVisualStyleBackColor = True
         ' 
+        ' Label6
+        ' 
+        Label6.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label6.Location = New Point(587, 190)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(156, 31)
+        Label6.TabIndex = 24
+        Label6.Text = "Category"
+        ' 
+        ' ComboBox1
+        ' 
+        ComboBox1.Font = New Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ComboBox1.FormattingEnabled = True
+        ComboBox1.Items.AddRange(New Object() {"--Select--", "Food", "Transport"})
+        ComboBox1.Location = New Point(587, 224)
+        ComboBox1.Name = "ComboBox1"
+        ComboBox1.Size = New Size(287, 37)
+        ComboBox1.TabIndex = 25
+        ' 
         ' Form_Income2
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Window
         ClientSize = New Size(1168, 662)
+        Controls.Add(ComboBox1)
+        Controls.Add(Label6)
         Controls.Add(Button1)
         Controls.Add(TextBox2)
         Controls.Add(Label5)
@@ -173,7 +196,7 @@ Partial Class Form_Income2
         Controls.Add(Btn_Income)
         Controls.Add(Label1)
         Name = "Form_Income2"
-        Text = "Form_Income"
+        Text = "                                                                       "
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -190,4 +213,6 @@ Partial Class Form_Income2
     Friend WithEvents Label5 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Label6 As Label
+    Friend WithEvents ComboBox1 As ComboBox
 End Class
